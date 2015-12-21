@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Greeting</title>
+<script>
+	function greeting() {
+
+		//alert("Welcome to JavaScript")
+		//console.log("Hello JS")
+		var nameNodeValue = document.getElementById("textName").value;
+		console.log(nameNodeValue);
+		var divNode = document.getElementById("greetDiv");
+		divNode.innerHTML="<h2> Hello.."+nameNodeValue+" </h2>";
+
+	}
+</script>
+</head>
+<body>
+	<input type="text" id="textName" value="Ketaki">
+	<br>
+	<input type="button" id="greetButton" value="greet"
+		onclick="greeting()">
+	<br>
+	<hr>
+	<div id="greetDiv"></div>
+</body>
+</html>

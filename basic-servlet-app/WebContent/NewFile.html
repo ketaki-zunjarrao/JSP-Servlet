@@ -1,0 +1,27 @@
+<html>
+<head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('#greetButton').click(function() {
+			var divNode = $('#greetDiv').val();
+			var name = $('#textName').val();
+			console.log(name);
+			document.write(" Welcome" + name);
+		});
+	});
+</script>
+</head>
+<body>
+
+	<input type="text" id="textName" value="Ketaki">
+	<br>
+	<input type="button" id="greetButton" value="greet">
+	<br>
+	<hr>
+	<div id="greetDiv"></div>
+
+
+</body>
+</html>

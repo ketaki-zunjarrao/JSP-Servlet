@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+	
+</script>
+<script>
+	$(document).ready(function() {
+		$('#greetButton').click(function() {
+			$("greetButton").slideToggle();
+			var divNode = document.getElementById("greetDiv");
+			divNode.innerHTML = "<h2> Hello.." + nameNodeValue + " </h2>";
+			var nameNodeValue = document.getElementById("textName").value;
+			console.log(nameNodeValue);
+
+			alert("Welcome " + nameNodeValue);
+		});
+	});
+</script>
+</head>
+<body>
+	<input type="text" id="textName" value="Ketaki">
+	<br>
+	<input type="button" id="greetButton" value="greet">
+
+
+
+	<br>
+	<hr>
+	<div id="greetDiv"></div>
+</body>
+</html>

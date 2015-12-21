@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>CatClicker</title>
+</head>
+<body>
+
+	<img src="cat.jpg" id="cat" />
+
+	<div id="dispCatCount"></div>
+	<script>
+		document.getElementById("cat").addEventListener("click", catCount);
+		var count = 0;
+		function catCount() {
+			document.getElementById("dispCatCount").innerHTML = ++count;
+		}
+	</script>
+
+</body>
+</html>

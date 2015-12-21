@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Licensed to the Apache Software Foundation (ASF) under one or more contributor 
+	license agreements. See the NOTICE file distributed with this work for additional 
+	information regarding copyright ownership. The ASF licenses this file to 
+	You under the Apache License, Version 2.0 (the "License"); you may not use 
+	this file except in compliance with the License. You may obtain a copy of 
+	the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required 
+	by applicable law or agreed to in writing, software distributed under the 
+	License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS 
+	OF ANY KIND, either express or implied. See the License for the specific 
+	language governing permissions and limitations under the License. -->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" metadata-complete="true" version="3.0">
+ 
+  <servlet>
+    <servlet-name>createcustomer</servlet-name>
+    <servlet-class>com.techlabs.control.CreateCustomerController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>createcustomer</servlet-name>
+    <url-pattern>/createcustomer</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>customerview</servlet-name>
+    <servlet-class>com.techlabs.control.CustomerViewController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>customerview</servlet-name>
+    <url-pattern>/customerview</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>deletecustomer</servlet-name>
+    <servlet-class>com.techlabs.control.DeleteCustomerController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deletecustomer</servlet-name>
+    <url-pattern>/deletecustomer</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>editcustomercontroller</servlet-name>
+    <servlet-class>com.techlabs.control.EditCustomerController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>editcustomercontroller</servlet-name>
+    <url-pattern>/editcustomercontroller</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>logincontroller</servlet-name>
+    <servlet-class>com.techlabs.control.LoginController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>logincontroller</servlet-name>
+    <url-pattern>/logincontroller</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>logoutcontroller</servlet-name>
+    <servlet-class>com.techlabs.control.LogoutController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>logoutcontroller</servlet-name>
+    <url-pattern>/logoutcontroller</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <filter>
+  <filter-name>LogFilter</filter-name>
+  <filter-class>com.techlabs.control.LogFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  <filter-name>LogFilter</filter-name>
+  <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  
+</web-app>

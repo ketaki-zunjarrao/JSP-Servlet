@@ -1,0 +1,15 @@
+contextLoaderListner
+
+spring orm with hibernate
+
+spring application context
+
+bean: SessionFactory
+inject bean to service class
+
+autowire
+
+getSessionFactory in bean
+
+@entity
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript"
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
+	
+</script>
+<meta charset="ISO-8859-1">
+<title>Form Validation</title>
+</head>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#submit').click(function() {
+			console.log(" DOM WORKING");
+			var username = $('#user').val();
+			var password = $('#pwd').val();
+			console.log(password);
+			console.log(username);
+			if (username == "") {
+				alert("Enter UserName");
+				console.log("Enter username");
+				return false;
+			}
+			if (password == null) {
+				alert("Enter Password")
+				console.log("Enter Password");
+				return false;
+			}
+		});
+	});
+</script>
+
+<body>
+	<form action="http://localhost:8080/basic-servlet-app/greet.html"
+		method="post">
+		Username: <input type="text" name="user" id="user" /> <br />
+		Password: <input type="password" name="pwd" id="pass" /> <br /> <br />
+		<input type="submit" name="submit" id="submit" />
+	</form>
+</body>
+</html>

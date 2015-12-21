@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>catCount</title>
+</head>
+<script type="text/javascript"
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
+	
+</script>
+<script type="text/javascript">
+	var count = 0;
+	$(document).ready(function() {
+		$('#cat').click(function() {
+			//var disp = $('#dispCount').
+
+			document.getElementById("dispCatCount").innerHTML = ++count;
+		});
+	});
+</script>
+<body>
+	<img alt="" src="C:/Users/xyz/Desktop/cat.jpg" id="cat">
+	<div id="dispCount"></div>
+</body>
+</html>

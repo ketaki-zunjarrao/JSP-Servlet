@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+	
+</script>
+
+<script>
+	$(document).ready(function() {
+		$('#submit').click(function() {
+			var username = $('#user').val();
+			console.log(username);
+			if (username == "") {
+				alert("Enter UserName");
+				console.log("Enter username");
+				return false;
+			}
+			if (username === null) {
+				alert("Enter UserName");
+				console.log("Enter username");
+				return false;
+			}
+		});
+
+	});
+</script>
+<body>
+	<ul>
+		<li><a href="http://localhost:8080/basic-servlet-app/home">Click
+				here to visit HomeServlet</a></li>
+	</ul>
+	<form action="
+		http://localhost:8080/basic-servlet-app/home"
+		method="post">
+		UserName:<input type="text" name="user" id="user"><br>
+		Password: <input type="password" name="pwd" id="pwd"> <br>
+		<input type="submit" name="submit" id="submit">
+	</form>
+
+</body>
+</html>
